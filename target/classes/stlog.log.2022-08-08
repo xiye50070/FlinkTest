@@ -1,0 +1,62 @@
+2022-08-08 13:52:32  [ flink-akka.actor.default-dispatcher-5:0 ] - [ INFO ]  Slf4jLogger started
+2022-08-08 13:52:33  [ flink-metrics-6:338 ] - [ INFO ]  Slf4jLogger started
+2022-08-08 13:52:34  [ main:1901 ] - [ WARN ]  Log file environment variable 'log.file' is not set.
+2022-08-08 13:52:34  [ main:1901 ] - [ WARN ]  JobManager log files are unavailable in the web dashboard. Log file location not found in environment variable 'log.file' or configuration key 'web.log.path'.
+2022-08-08 13:53:02  [ flink-akka.actor.default-dispatcher-5:0 ] - [ INFO ]  Slf4jLogger started
+2022-08-08 13:53:02  [ flink-metrics-4:294 ] - [ INFO ]  Slf4jLogger started
+2022-08-08 13:53:03  [ main:1474 ] - [ WARN ]  Log file environment variable 'log.file' is not set.
+2022-08-08 13:53:03  [ main:1476 ] - [ WARN ]  JobManager log files are unavailable in the web dashboard. Log file location not found in environment variable 'log.file' or configuration key 'web.log.path'.
+2022-08-08 13:54:08  [ flink-akka.actor.default-dispatcher-5:0 ] - [ INFO ]  Slf4jLogger started
+2022-08-08 13:54:08  [ flink-metrics-4:225 ] - [ INFO ]  Slf4jLogger started
+2022-08-08 13:54:09  [ main:1119 ] - [ WARN ]  Log file environment variable 'log.file' is not set.
+2022-08-08 13:54:09  [ main:1119 ] - [ WARN ]  JobManager log files are unavailable in the web dashboard. Log file location not found in environment variable 'log.file' or configuration key 'web.log.path'.
+2022-08-08 13:55:34  [ flink-akka.actor.default-dispatcher-5:1 ] - [ INFO ]  Slf4jLogger started
+2022-08-08 13:55:34  [ flink-metrics-4:265 ] - [ INFO ]  Slf4jLogger started
+2022-08-08 13:55:35  [ main:1216 ] - [ WARN ]  Log file environment variable 'log.file' is not set.
+2022-08-08 13:55:35  [ main:1217 ] - [ WARN ]  JobManager log files are unavailable in the web dashboard. Log file location not found in environment variable 'log.file' or configuration key 'web.log.path'.
+2022-08-08 21:03:43  [ flink-akka.actor.default-dispatcher-5:0 ] - [ INFO ]  Slf4jLogger started
+2022-08-08 21:03:43  [ flink-metrics-8:128 ] - [ INFO ]  Slf4jLogger started
+2022-08-08 21:03:43  [ main:742 ] - [ WARN ]  Log file environment variable 'log.file' is not set.
+2022-08-08 21:03:43  [ main:744 ] - [ WARN ]  JobManager log files are unavailable in the web dashboard. Log file location not found in environment variable 'log.file' or configuration key 'web.log.path'.
+2022-08-08 21:22:47  [ flink-akka.actor.default-dispatcher-5:0 ] - [ INFO ]  Slf4jLogger started
+2022-08-08 21:22:47  [ flink-metrics-4:123 ] - [ INFO ]  Slf4jLogger started
+2022-08-08 21:22:47  [ main:562 ] - [ WARN ]  Log file environment variable 'log.file' is not set.
+2022-08-08 21:22:47  [ main:563 ] - [ WARN ]  JobManager log files are unavailable in the web dashboard. Log file location not found in environment variable 'log.file' or configuration key 'web.log.path'.
+2022-08-08 21:22:48  [ KeyedProcess -> Sink: Print to Std. Out (1/1)#0:1511 ] - [ WARN ]  KeyedProcess -> Sink: Print to Std. Out (1/1)#0 (0431f6262af93f334f41275d941d15c5) switched from RUNNING to FAILED with failure cause: java.lang.NullPointerException
+	at com.wmz.apiTest.processApi.EventTimeTimerTest$1.processElement(EventTimeTimerTest.java:24)
+	at com.wmz.apiTest.processApi.EventTimeTimerTest$1.processElement(EventTimeTimerTest.java:20)
+	at org.apache.flink.streaming.api.operators.KeyedProcessOperator.processElement(KeyedProcessOperator.java:83)
+	at org.apache.flink.streaming.runtime.tasks.OneInputStreamTask$StreamTaskNetworkOutput.emitRecord(OneInputStreamTask.java:233)
+	at org.apache.flink.streaming.runtime.io.AbstractStreamTaskNetworkInput.processElement(AbstractStreamTaskNetworkInput.java:134)
+	at org.apache.flink.streaming.runtime.io.AbstractStreamTaskNetworkInput.emitNext(AbstractStreamTaskNetworkInput.java:105)
+	at org.apache.flink.streaming.runtime.io.StreamOneInputProcessor.processInput(StreamOneInputProcessor.java:65)
+	at org.apache.flink.streaming.runtime.tasks.StreamTask.processInput(StreamTask.java:496)
+	at org.apache.flink.streaming.runtime.tasks.mailbox.MailboxProcessor.runMailboxLoop(MailboxProcessor.java:203)
+	at org.apache.flink.streaming.runtime.tasks.StreamTask.runMailboxLoop(StreamTask.java:809)
+	at org.apache.flink.streaming.runtime.tasks.StreamTask.invoke(StreamTask.java:761)
+	at org.apache.flink.runtime.taskmanager.Task.runWithSystemExitMonitoring(Task.java:958)
+	at org.apache.flink.runtime.taskmanager.Task.restoreAndInvoke(Task.java:937)
+	at org.apache.flink.runtime.taskmanager.Task.doRun(Task.java:766)
+	at org.apache.flink.runtime.taskmanager.Task.run(Task.java:575)
+	at java.lang.Thread.run(Thread.java:750)
+
+2022-08-08 21:22:48  [ flink-akka.actor.default-dispatcher-7:1540 ] - [ WARN ]  No hostname could be resolved for the IP address 127.0.0.1, using IP address as host name. Local input split assignment (such as for HDFS files) may be impacted.
+2022-08-08 21:38:32  [ flink-akka.actor.default-dispatcher-5:1 ] - [ INFO ]  Slf4jLogger started
+2022-08-08 21:38:32  [ flink-metrics-6:125 ] - [ INFO ]  Slf4jLogger started
+2022-08-08 21:38:32  [ main:580 ] - [ WARN ]  Log file environment variable 'log.file' is not set.
+2022-08-08 21:38:32  [ main:580 ] - [ WARN ]  JobManager log files are unavailable in the web dashboard. Log file location not found in environment variable 'log.file' or configuration key 'web.log.path'.
+2022-08-08 23:49:00  [ flink-akka.actor.default-dispatcher-5:0 ] - [ INFO ]  Slf4jLogger started
+2022-08-08 23:49:00  [ flink-metrics-7:138 ] - [ INFO ]  Slf4jLogger started
+2022-08-08 23:49:01  [ main:571 ] - [ WARN ]  Log file environment variable 'log.file' is not set.
+2022-08-08 23:49:01  [ main:572 ] - [ WARN ]  JobManager log files are unavailable in the web dashboard. Log file location not found in environment variable 'log.file' or configuration key 'web.log.path'.
+2022-08-08 23:49:01  [ TriggerWindow(SlidingEventTimeWindows(10000, 5000), AggregatingStateDescriptor{name=window-contents, defaultValue=null, serializer=org.apache.flink.api.java.typeutils.runtime.kryo.KryoSerializer@ecc85315}, EventTimeTrigger(), AllWindowedStream.aggregate(AllWindowedStream.java:770)) -> Sink: Print to Std. Out (1/1)#0:1441 ] - [ WARN ]  The operator name TriggerWindow(SlidingEventTimeWindows(10000, 5000), AggregatingStateDescriptor{name=window-contents, defaultValue=null, serializer=org.apache.flink.api.java.typeutils.runtime.kryo.KryoSerializer@ecc85315}, EventTimeTrigger(), AllWindowedStream.aggregate(AllWindowedStream.java:770)) exceeded the 80 characters length limit and was truncated.
+2022-08-08 23:51:14  [ flink-akka.actor.default-dispatcher-5:1 ] - [ INFO ]  Slf4jLogger started
+2022-08-08 23:51:14  [ flink-metrics-4:136 ] - [ INFO ]  Slf4jLogger started
+2022-08-08 23:51:14  [ main:696 ] - [ WARN ]  Log file environment variable 'log.file' is not set.
+2022-08-08 23:51:14  [ main:696 ] - [ WARN ]  JobManager log files are unavailable in the web dashboard. Log file location not found in environment variable 'log.file' or configuration key 'web.log.path'.
+2022-08-08 23:51:15  [ TriggerWindow(SlidingEventTimeWindows(10000, 5000), AggregatingStateDescriptor{name=window-contents, defaultValue=null, serializer=org.apache.flink.api.java.typeutils.runtime.kryo.KryoSerializer@675cd14d}, EventTimeTrigger(), AllWindowedStream.aggregate(AllWindowedStream.java:770)) -> Sink: Print to Std. Out (1/1)#0:1668 ] - [ WARN ]  The operator name TriggerWindow(SlidingEventTimeWindows(10000, 5000), AggregatingStateDescriptor{name=window-contents, defaultValue=null, serializer=org.apache.flink.api.java.typeutils.runtime.kryo.KryoSerializer@675cd14d}, EventTimeTrigger(), AllWindowedStream.aggregate(AllWindowedStream.java:770)) exceeded the 80 characters length limit and was truncated.
+2022-08-08 23:57:00  [ flink-akka.actor.default-dispatcher-4:0 ] - [ INFO ]  Slf4jLogger started
+2022-08-08 23:57:00  [ flink-metrics-7:129 ] - [ INFO ]  Slf4jLogger started
+2022-08-08 23:57:01  [ main:585 ] - [ WARN ]  Log file environment variable 'log.file' is not set.
+2022-08-08 23:57:01  [ main:586 ] - [ WARN ]  JobManager log files are unavailable in the web dashboard. Log file location not found in environment variable 'log.file' or configuration key 'web.log.path'.
+2022-08-08 23:57:02  [ TriggerWindow(SlidingEventTimeWindows(10000, 5000), AggregatingStateDescriptor{name=window-contents, defaultValue=null, serializer=org.apache.flink.api.java.typeutils.runtime.kryo.KryoSerializer@ecc85315}, EventTimeTrigger(), AllWindowedStream.aggregate(AllWindowedStream.java:770)) -> Sink: Print to Std. Out (1/1)#0:1448 ] - [ WARN ]  The operator name TriggerWindow(SlidingEventTimeWindows(10000, 5000), AggregatingStateDescriptor{name=window-contents, defaultValue=null, serializer=org.apache.flink.api.java.typeutils.runtime.kryo.KryoSerializer@ecc85315}, EventTimeTrigger(), AllWindowedStream.aggregate(AllWindowedStream.java:770)) exceeded the 80 characters length limit and was truncated.

@@ -1,0 +1,4 @@
+2022-08-10 09:52:59  [ flink-akka.actor.default-dispatcher-5:0 ] - [ INFO ]  Slf4jLogger started
+2022-08-10 09:52:59  [ flink-metrics-7:101 ] - [ INFO ]  Slf4jLogger started
+2022-08-10 09:53:00  [ main:568 ] - [ WARN ]  Log file environment variable 'log.file' is not set.
+2022-08-10 09:53:00  [ main:568 ] - [ WARN ]  JobManager log files are unavailable in the web dashboard. Log file location not found in environment variable 'log.file' or configuration key 'web.log.path'.

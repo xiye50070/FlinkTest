@@ -1,0 +1,96 @@
+2022-07-29 11:10:35  [ main:0 ] - [ WARN ]  Ignoring configured key DeSerializer (key.deserializer)
+2022-07-29 11:10:35  [ main:2 ] - [ WARN ]  Ignoring configured value DeSerializer (value.deserializer)
+2022-07-29 11:10:36  [ flink-akka.actor.default-dispatcher-3:978 ] - [ INFO ]  Slf4jLogger started
+2022-07-29 11:10:36  [ flink-metrics-2:1164 ] - [ INFO ]  Slf4jLogger started
+2022-07-29 11:10:37  [ main:1642 ] - [ WARN ]  No hostname could be resolved for the IP address 127.0.0.1, using IP address as host name. Local input split assignment (such as for HDFS files) may be impacted.
+2022-07-29 11:10:37  [ main:1694 ] - [ WARN ]  No hostname could be resolved for the IP address 127.0.0.1, using IP address as host name. Local input split assignment (such as for HDFS files) may be impacted.
+2022-07-29 11:10:37  [ main:2026 ] - [ WARN ]  Log file environment variable 'log.file' is not set.
+2022-07-29 11:10:37  [ main:2026 ] - [ WARN ]  JobManager log files are unavailable in the web dashboard. Log file location not found in environment variable 'log.file' or configuration key 'Key: 'web.log.path' , default: null (fallback keys: [{key=jobmanager.web.log.path, isDeprecated=true}])'.
+2022-07-29 11:40:37  [ flink-akka.actor.default-dispatcher-4:0 ] - [ INFO ]  Slf4jLogger started
+2022-07-29 11:40:37  [ flink-metrics-2:164 ] - [ INFO ]  Slf4jLogger started
+2022-07-29 11:40:37  [ main:572 ] - [ WARN ]  No hostname could be resolved for the IP address 127.0.0.1, using IP address as host name. Local input split assignment (such as for HDFS files) may be impacted.
+2022-07-29 11:40:37  [ main:609 ] - [ WARN ]  No hostname could be resolved for the IP address 127.0.0.1, using IP address as host name. Local input split assignment (such as for HDFS files) may be impacted.
+2022-07-29 11:40:38  [ main:863 ] - [ WARN ]  Log file environment variable 'log.file' is not set.
+2022-07-29 11:40:38  [ main:864 ] - [ WARN ]  JobManager log files are unavailable in the web dashboard. Log file location not found in environment variable 'log.file' or configuration key 'Key: 'web.log.path' , default: null (fallback keys: [{key=jobmanager.web.log.path, isDeprecated=true}])'.
+2022-07-29 11:45:21  [ flink-akka.actor.default-dispatcher-2:0 ] - [ INFO ]  Slf4jLogger started
+2022-07-29 11:45:21  [ flink-metrics-2:178 ] - [ INFO ]  Slf4jLogger started
+2022-07-29 11:45:21  [ main:535 ] - [ WARN ]  No hostname could be resolved for the IP address 127.0.0.1, using IP address as host name. Local input split assignment (such as for HDFS files) may be impacted.
+2022-07-29 11:45:21  [ main:578 ] - [ WARN ]  No hostname could be resolved for the IP address 127.0.0.1, using IP address as host name. Local input split assignment (such as for HDFS files) may be impacted.
+2022-07-29 11:45:22  [ main:828 ] - [ WARN ]  Log file environment variable 'log.file' is not set.
+2022-07-29 11:45:22  [ main:828 ] - [ WARN ]  JobManager log files are unavailable in the web dashboard. Log file location not found in environment variable 'log.file' or configuration key 'Key: 'web.log.path' , default: null (fallback keys: [{key=jobmanager.web.log.path, isDeprecated=true}])'.
+2022-07-29 11:51:47  [ flink-akka.actor.default-dispatcher-3:0 ] - [ INFO ]  Slf4jLogger started
+2022-07-29 11:51:47  [ flink-metrics-2:159 ] - [ INFO ]  Slf4jLogger started
+2022-07-29 11:51:48  [ main:553 ] - [ WARN ]  No hostname could be resolved for the IP address 127.0.0.1, using IP address as host name. Local input split assignment (such as for HDFS files) may be impacted.
+2022-07-29 11:51:48  [ main:589 ] - [ WARN ]  No hostname could be resolved for the IP address 127.0.0.1, using IP address as host name. Local input split assignment (such as for HDFS files) may be impacted.
+2022-07-29 11:51:48  [ main:840 ] - [ WARN ]  Log file environment variable 'log.file' is not set.
+2022-07-29 11:51:48  [ main:840 ] - [ WARN ]  JobManager log files are unavailable in the web dashboard. Log file location not found in environment variable 'log.file' or configuration key 'Key: 'web.log.path' , default: null (fallback keys: [{key=jobmanager.web.log.path, isDeprecated=true}])'.
+2022-07-29 16:16:07  [ flink-akka.actor.default-dispatcher-5:0 ] - [ INFO ]  Slf4jLogger started
+2022-07-29 16:16:07  [ flink-metrics-8:103 ] - [ INFO ]  Slf4jLogger started
+2022-07-29 16:16:08  [ main:464 ] - [ WARN ]  Log file environment variable 'log.file' is not set.
+2022-07-29 16:16:08  [ main:464 ] - [ WARN ]  JobManager log files are unavailable in the web dashboard. Log file location not found in environment variable 'log.file' or configuration key 'web.log.path'.
+2022-07-29 16:16:09  [ SourceCoordinator-Source: DevelopTest -> Sink: Print to Std. Out:1140 ] - [ WARN ]  The configuration 'client.id.prefix' was supplied but isn't a known config.
+2022-07-29 16:16:09  [ SourceCoordinator-Source: DevelopTest -> Sink: Print to Std. Out:1140 ] - [ WARN ]  The configuration 'partition.discovery.interval.ms' was supplied but isn't a known config.
+2022-07-29 16:16:09  [ SourceCoordinator-Source: DevelopTest -> Sink: Print to Std. Out:1176 ] - [ WARN ]  The configuration 'key.deserializer' was supplied but isn't a known config.
+2022-07-29 16:16:09  [ SourceCoordinator-Source: DevelopTest -> Sink: Print to Std. Out:1176 ] - [ WARN ]  The configuration 'value.deserializer' was supplied but isn't a known config.
+2022-07-29 16:16:09  [ SourceCoordinator-Source: DevelopTest -> Sink: Print to Std. Out:1176 ] - [ WARN ]  The configuration 'enable.auto.commit' was supplied but isn't a known config.
+2022-07-29 16:16:09  [ SourceCoordinator-Source: DevelopTest -> Sink: Print to Std. Out:1176 ] - [ WARN ]  The configuration 'group.id' was supplied but isn't a known config.
+2022-07-29 16:16:09  [ SourceCoordinator-Source: DevelopTest -> Sink: Print to Std. Out:1176 ] - [ WARN ]  The configuration 'client.id.prefix' was supplied but isn't a known config.
+2022-07-29 16:16:09  [ SourceCoordinator-Source: DevelopTest -> Sink: Print to Std. Out:1176 ] - [ WARN ]  The configuration 'partition.discovery.interval.ms' was supplied but isn't a known config.
+2022-07-29 16:16:09  [ SourceCoordinator-Source: DevelopTest -> Sink: Print to Std. Out:1176 ] - [ WARN ]  The configuration 'auto.offset.reset' was supplied but isn't a known config.
+2022-07-29 16:16:09  [ Source: DevelopTest -> Sink: Print to Std. Out (2/8)#0:1455 ] - [ WARN ]  The configuration 'client.id.prefix' was supplied but isn't a known config.
+2022-07-29 16:16:09  [ Source: DevelopTest -> Sink: Print to Std. Out (2/8)#0:1455 ] - [ WARN ]  The configuration 'partition.discovery.interval.ms' was supplied but isn't a known config.
+2022-07-29 16:31:00  [ flink-akka.actor.default-dispatcher-5:0 ] - [ INFO ]  Slf4jLogger started
+2022-07-29 16:31:00  [ flink-metrics-7:104 ] - [ INFO ]  Slf4jLogger started
+2022-07-29 16:31:00  [ main:462 ] - [ WARN ]  Log file environment variable 'log.file' is not set.
+2022-07-29 16:31:00  [ main:462 ] - [ WARN ]  JobManager log files are unavailable in the web dashboard. Log file location not found in environment variable 'log.file' or configuration key 'web.log.path'.
+2022-07-29 16:31:02  [ Split Reader: Custom File Source -> Map (1/1)#0:1693 ] - [ WARN ]  Split Reader: Custom File Source -> Map (1/1)#0 (e31aef77d0ef757098bd0bef76772941) switched from RUNNING to FAILED with failure cause: java.lang.NumberFormatException: For input string: " 1547718201"
+	at java.lang.NumberFormatException.forInputString(NumberFormatException.java:65)
+	at java.lang.Long.parseLong(Long.java:578)
+	at java.lang.Long.<init>(Long.java:965)
+	at com.wmz.apiTest.transform.TransformTest2_RollingAggregation.lambda$main$10cbcf54$1(TransformTest2_RollingAggregation.java:19)
+	at org.apache.flink.streaming.api.operators.StreamMap.processElement(StreamMap.java:38)
+	at org.apache.flink.streaming.runtime.tasks.CopyingChainingOutput.pushToOperator(CopyingChainingOutput.java:82)
+	at org.apache.flink.streaming.runtime.tasks.CopyingChainingOutput.collect(CopyingChainingOutput.java:57)
+	at org.apache.flink.streaming.runtime.tasks.CopyingChainingOutput.collect(CopyingChainingOutput.java:29)
+	at org.apache.flink.streaming.api.operators.CountingOutput.collect(CountingOutput.java:56)
+	at org.apache.flink.streaming.api.operators.CountingOutput.collect(CountingOutput.java:29)
+	at org.apache.flink.streaming.api.operators.StreamSourceContexts$ManualWatermarkContext.processAndCollect(StreamSourceContexts.java:418)
+	at org.apache.flink.streaming.api.operators.StreamSourceContexts$WatermarkContext.collect(StreamSourceContexts.java:513)
+	at org.apache.flink.streaming.api.operators.StreamSourceContexts$SwitchingOnClose.collect(StreamSourceContexts.java:103)
+	at org.apache.flink.streaming.api.functions.source.ContinuousFileReaderOperator.readAndCollectRecord(ContinuousFileReaderOperator.java:392)
+	at org.apache.flink.streaming.api.functions.source.ContinuousFileReaderOperator.processRecord(ContinuousFileReaderOperator.java:352)
+	at org.apache.flink.streaming.api.functions.source.ContinuousFileReaderOperator.lambda$new$0(ContinuousFileReaderOperator.java:240)
+	at org.apache.flink.streaming.runtime.tasks.StreamTaskActionExecutor$1.runThrowing(StreamTaskActionExecutor.java:50)
+	at org.apache.flink.streaming.runtime.tasks.mailbox.Mail.run(Mail.java:90)
+	at org.apache.flink.streaming.runtime.tasks.mailbox.MailboxProcessor.processMailsNonBlocking(MailboxProcessor.java:353)
+	at org.apache.flink.streaming.runtime.tasks.mailbox.MailboxProcessor.processMail(MailboxProcessor.java:317)
+	at org.apache.flink.streaming.runtime.tasks.mailbox.MailboxProcessor.runMailboxLoop(MailboxProcessor.java:201)
+	at org.apache.flink.streaming.runtime.tasks.StreamTask.runMailboxLoop(StreamTask.java:809)
+	at org.apache.flink.streaming.runtime.tasks.StreamTask.invoke(StreamTask.java:761)
+	at org.apache.flink.runtime.taskmanager.Task.runWithSystemExitMonitoring(Task.java:958)
+	at org.apache.flink.runtime.taskmanager.Task.restoreAndInvoke(Task.java:937)
+	at org.apache.flink.runtime.taskmanager.Task.doRun(Task.java:766)
+	at org.apache.flink.runtime.taskmanager.Task.run(Task.java:575)
+	at java.lang.Thread.run(Thread.java:750)
+
+2022-07-29 16:31:02  [ flink-akka.actor.default-dispatcher-9:1720 ] - [ WARN ]  No hostname could be resolved for the IP address 127.0.0.1, using IP address as host name. Local input split assignment (such as for HDFS files) may be impacted.
+2022-07-29 16:31:34  [ flink-akka.actor.default-dispatcher-5:0 ] - [ INFO ]  Slf4jLogger started
+2022-07-29 16:31:34  [ flink-metrics-8:99 ] - [ INFO ]  Slf4jLogger started
+2022-07-29 16:31:35  [ main:486 ] - [ WARN ]  Log file environment variable 'log.file' is not set.
+2022-07-29 16:31:35  [ main:487 ] - [ WARN ]  JobManager log files are unavailable in the web dashboard. Log file location not found in environment variable 'log.file' or configuration key 'web.log.path'.
+2022-07-29 16:31:36  [ Split Reader: Custom File Source -> Map (1/1)#0:1696 ] - [ WARN ]  not processing any records while closed
+2022-07-29 16:37:31  [ flink-akka.actor.default-dispatcher-4:0 ] - [ INFO ]  Slf4jLogger started
+2022-07-29 16:37:32  [ flink-metrics-8:99 ] - [ INFO ]  Slf4jLogger started
+2022-07-29 16:37:32  [ main:456 ] - [ WARN ]  Log file environment variable 'log.file' is not set.
+2022-07-29 16:37:32  [ main:456 ] - [ WARN ]  JobManager log files are unavailable in the web dashboard. Log file location not found in environment variable 'log.file' or configuration key 'web.log.path'.
+2022-07-29 16:37:33  [ Split Reader: Custom File Source -> Map (1/1)#0:1697 ] - [ WARN ]  not processing any records while closed
+2022-07-29 16:40:14  [ flink-akka.actor.default-dispatcher-5:0 ] - [ INFO ]  Slf4jLogger started
+2022-07-29 16:40:14  [ flink-metrics-7:103 ] - [ INFO ]  Slf4jLogger started
+2022-07-29 16:40:14  [ main:460 ] - [ WARN ]  Log file environment variable 'log.file' is not set.
+2022-07-29 16:40:14  [ main:460 ] - [ WARN ]  JobManager log files are unavailable in the web dashboard. Log file location not found in environment variable 'log.file' or configuration key 'web.log.path'.
+2022-07-29 16:40:16  [ Split Reader: Custom File Source -> Map (1/1)#0:1666 ] - [ WARN ]  not processing any records while closed
+2022-07-29 16:51:45  [ flink-akka.actor.default-dispatcher-5:0 ] - [ INFO ]  Slf4jLogger started
+2022-07-29 16:51:45  [ flink-metrics-7:103 ] - [ INFO ]  Slf4jLogger started
+2022-07-29 16:51:45  [ main:462 ] - [ WARN ]  Log file environment variable 'log.file' is not set.
+2022-07-29 16:51:45  [ main:462 ] - [ WARN ]  JobManager log files are unavailable in the web dashboard. Log file location not found in environment variable 'log.file' or configuration key 'web.log.path'.
+2022-07-29 16:51:46  [ Split Reader: Custom File Source -> Map (1/1)#0:1722 ] - [ WARN ]  not processing any records while closed

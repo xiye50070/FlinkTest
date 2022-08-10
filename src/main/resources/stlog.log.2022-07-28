@@ -1,0 +1,16 @@
+2022-07-28 17:52:32  [ main:0 ] - [ WARN ]  Ignoring configured key DeSerializer (key.deserializer)
+2022-07-28 17:52:32  [ main:1 ] - [ WARN ]  Ignoring configured value DeSerializer (value.deserializer)
+2022-07-28 17:52:32  [ flink-akka.actor.default-dispatcher-3:909 ] - [ INFO ]  Slf4jLogger started
+2022-07-28 17:52:33  [ flink-metrics-2:1081 ] - [ INFO ]  Slf4jLogger started
+2022-07-28 17:52:33  [ main:1660 ] - [ WARN ]  No hostname could be resolved for the IP address 127.0.0.1, using IP address as host name. Local input split assignment (such as for HDFS files) may be impacted.
+2022-07-28 17:52:33  [ main:1725 ] - [ WARN ]  No hostname could be resolved for the IP address 127.0.0.1, using IP address as host name. Local input split assignment (such as for HDFS files) may be impacted.
+2022-07-28 17:52:34  [ main:2057 ] - [ WARN ]  Log file environment variable 'log.file' is not set.
+2022-07-28 17:52:34  [ main:2057 ] - [ WARN ]  JobManager log files are unavailable in the web dashboard. Log file location not found in environment variable 'log.file' or configuration key 'Key: 'web.log.path' , default: null (fallback keys: [{key=jobmanager.web.log.path, isDeprecated=true}])'.
+2022-07-28 17:53:07  [ main:0 ] - [ WARN ]  Ignoring configured key DeSerializer (key.deserializer)
+2022-07-28 17:53:07  [ main:1 ] - [ WARN ]  Ignoring configured value DeSerializer (value.deserializer)
+2022-07-28 17:53:08  [ flink-akka.actor.default-dispatcher-2:819 ] - [ INFO ]  Slf4jLogger started
+2022-07-28 17:53:08  [ flink-metrics-2:980 ] - [ INFO ]  Slf4jLogger started
+2022-07-28 17:53:09  [ main:1323 ] - [ WARN ]  No hostname could be resolved for the IP address 127.0.0.1, using IP address as host name. Local input split assignment (such as for HDFS files) may be impacted.
+2022-07-28 17:53:09  [ main:1364 ] - [ WARN ]  No hostname could be resolved for the IP address 127.0.0.1, using IP address as host name. Local input split assignment (such as for HDFS files) may be impacted.
+2022-07-28 17:53:09  [ main:1623 ] - [ WARN ]  Log file environment variable 'log.file' is not set.
+2022-07-28 17:53:09  [ main:1623 ] - [ WARN ]  JobManager log files are unavailable in the web dashboard. Log file location not found in environment variable 'log.file' or configuration key 'Key: 'web.log.path' , default: null (fallback keys: [{key=jobmanager.web.log.path, isDeprecated=true}])'.

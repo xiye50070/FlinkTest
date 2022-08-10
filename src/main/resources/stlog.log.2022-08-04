@@ -1,0 +1,6 @@
+2022-08-04 16:15:04  [ flink-akka.actor.default-dispatcher-4:0 ] - [ INFO ]  Slf4jLogger started
+2022-08-04 16:15:04  [ flink-metrics-6:128 ] - [ INFO ]  Slf4jLogger started
+2022-08-04 16:15:05  [ main:616 ] - [ WARN ]  Log file environment variable 'log.file' is not set.
+2022-08-04 16:15:05  [ main:616 ] - [ WARN ]  JobManager log files are unavailable in the web dashboard. Log file location not found in environment variable 'log.file' or configuration key 'web.log.path'.
+2022-08-04 16:15:06  [ Window(TumblingProcessingTimeWindows(15000), ProcessingTimeTrigger, AggregateFunction$1, PassThroughWindowFunction) -> Sink: Print to Std. Out (1/1)#0:1392 ] - [ WARN ]  The operator name Window(TumblingProcessingTimeWindows(15000), ProcessingTimeTrigger, AggregateFunction$1, PassThroughWindowFunction) exceeded the 80 characters length limit and was truncated.
+2022-08-04 16:15:06  [ Split Reader: Custom File Source -> Map (1/1)#0:2056 ] - [ WARN ]  not processing any records while closed
