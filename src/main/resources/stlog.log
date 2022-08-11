@@ -1,4 +1,32 @@
-2022-08-10 09:52:59  [ flink-akka.actor.default-dispatcher-5:0 ] - [ INFO ]  Slf4jLogger started
-2022-08-10 09:52:59  [ flink-metrics-7:101 ] - [ INFO ]  Slf4jLogger started
-2022-08-10 09:53:00  [ main:568 ] - [ WARN ]  Log file environment variable 'log.file' is not set.
-2022-08-10 09:53:00  [ main:568 ] - [ WARN ]  JobManager log files are unavailable in the web dashboard. Log file location not found in environment variable 'log.file' or configuration key 'web.log.path'.
+2022-08-11 11:11:58  [ flink-akka.actor.default-dispatcher-5:0 ] - [ INFO ]  Slf4jLogger started
+2022-08-11 11:11:58  [ flink-metrics-7:104 ] - [ INFO ]  Slf4jLogger started
+2022-08-11 11:11:58  [ main:607 ] - [ WARN ]  Log file environment variable 'log.file' is not set.
+2022-08-11 11:11:58  [ main:608 ] - [ WARN ]  JobManager log files are unavailable in the web dashboard. Log file location not found in environment variable 'log.file' or configuration key 'web.log.path'.
+2022-08-11 11:34:02  [ flink-akka.actor.default-dispatcher-5:0 ] - [ INFO ]  Slf4jLogger started
+2022-08-11 11:34:02  [ flink-metrics-5:101 ] - [ INFO ]  Slf4jLogger started
+2022-08-11 11:34:03  [ main:454 ] - [ WARN ]  Log file environment variable 'log.file' is not set.
+2022-08-11 11:34:03  [ main:456 ] - [ WARN ]  JobManager log files are unavailable in the web dashboard. Log file location not found in environment variable 'log.file' or configuration key 'web.log.path'.
+2022-08-11 11:35:24  [ flink-akka.actor.default-dispatcher-5:0 ] - [ INFO ]  Slf4jLogger started
+2022-08-11 11:35:25  [ flink-metrics-7:98 ] - [ INFO ]  Slf4jLogger started
+2022-08-11 11:35:25  [ main:443 ] - [ WARN ]  Log file environment variable 'log.file' is not set.
+2022-08-11 11:35:25  [ main:444 ] - [ WARN ]  JobManager log files are unavailable in the web dashboard. Log file location not found in environment variable 'log.file' or configuration key 'web.log.path'.
+2022-08-11 11:36:28  [ flink-akka.actor.default-dispatcher-5:0 ] - [ INFO ]  Slf4jLogger started
+2022-08-11 11:36:29  [ flink-metrics-7:96 ] - [ INFO ]  Slf4jLogger started
+2022-08-11 11:36:29  [ main:443 ] - [ WARN ]  Log file environment variable 'log.file' is not set.
+2022-08-11 11:36:29  [ main:443 ] - [ WARN ]  JobManager log files are unavailable in the web dashboard. Log file location not found in environment variable 'log.file' or configuration key 'web.log.path'.
+2022-08-11 15:22:17  [ flink-akka.actor.default-dispatcher-5:0 ] - [ INFO ]  Slf4jLogger started
+2022-08-11 15:22:17  [ flink-metrics-6:99 ] - [ INFO ]  Slf4jLogger started
+2022-08-11 15:22:17  [ main:449 ] - [ WARN ]  Log file environment variable 'log.file' is not set.
+2022-08-11 15:22:17  [ main:450 ] - [ WARN ]  JobManager log files are unavailable in the web dashboard. Log file location not found in environment variable 'log.file' or configuration key 'web.log.path'.
+2022-08-11 16:14:04  [ flink-akka.actor.default-dispatcher-4:0 ] - [ INFO ]  Slf4jLogger started
+2022-08-11 16:14:04  [ flink-metrics-6:96 ] - [ INFO ]  Slf4jLogger started
+2022-08-11 16:14:05  [ main:457 ] - [ WARN ]  Log file environment variable 'log.file' is not set.
+2022-08-11 16:14:05  [ main:457 ] - [ WARN ]  JobManager log files are unavailable in the web dashboard. Log file location not found in environment variable 'log.file' or configuration key 'web.log.path'.
+2022-08-11 16:15:19  [ flink-akka.actor.default-dispatcher-6:0 ] - [ INFO ]  Slf4jLogger started
+2022-08-11 16:15:19  [ flink-metrics-6:96 ] - [ INFO ]  Slf4jLogger started
+2022-08-11 16:15:20  [ main:455 ] - [ WARN ]  Log file environment variable 'log.file' is not set.
+2022-08-11 16:15:20  [ main:455 ] - [ WARN ]  JobManager log files are unavailable in the web dashboard. Log file location not found in environment variable 'log.file' or configuration key 'web.log.path'.
+2022-08-11 16:44:58  [ flink-akka.actor.default-dispatcher-5:0 ] - [ INFO ]  Slf4jLogger started
+2022-08-11 16:44:58  [ flink-metrics-4:97 ] - [ INFO ]  Slf4jLogger started
+2022-08-11 16:44:59  [ main:448 ] - [ WARN ]  Log file environment variable 'log.file' is not set.
+2022-08-11 16:44:59  [ main:448 ] - [ WARN ]  JobManager log files are unavailable in the web dashboard. Log file location not found in environment variable 'log.file' or configuration key 'web.log.path'.

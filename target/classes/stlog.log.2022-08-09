@@ -1,0 +1,169 @@
+2022-08-09 14:32:27  [ flink-akka.actor.default-dispatcher-5:0 ] - [ INFO ]  Slf4jLogger started
+2022-08-09 14:32:27  [ flink-metrics-5:106 ] - [ INFO ]  Slf4jLogger started
+2022-08-09 14:32:28  [ main:643 ] - [ WARN ]  Log file environment variable 'log.file' is not set.
+2022-08-09 14:32:28  [ main:643 ] - [ WARN ]  JobManager log files are unavailable in the web dashboard. Log file location not found in environment variable 'log.file' or configuration key 'web.log.path'.
+2022-08-09 14:32:29  [ Window(TumblingEventTimeWindows(10000), EventTimeTrigger, UrlViewCountAgg, UrlViewCountResult) -> Sink: Print to Std. Out (1/1)#0:1399 ] - [ WARN ]  The operator name Window(TumblingEventTimeWindows(10000), EventTimeTrigger, UrlViewCountAgg, UrlViewCountResult) exceeded the 80 characters length limit and was truncated.
+2022-08-09 14:32:35  [ KeyedProcess -> Sink: Print to Std. Out (1/1)#0:7725 ] - [ WARN ]  KeyedProcess -> Sink: Print to Std. Out (1/1)#0 (542801caeaff1f280b147ad3d3aa0a67) switched from RUNNING to FAILED with failure cause: java.lang.IndexOutOfBoundsException: Index: 1, Size: 1
+	at java.util.ArrayList.rangeCheck(ArrayList.java:659)
+	at java.util.ArrayList.get(ArrayList.java:435)
+	at com.wmz.apiTest.topN.TopNExample$TopNProcessResult.onTimer(TopNExample.java:109)
+	at org.apache.flink.streaming.api.operators.KeyedProcessOperator.invokeUserFunction(KeyedProcessOperator.java:91)
+	at org.apache.flink.streaming.api.operators.KeyedProcessOperator.onEventTime(KeyedProcessOperator.java:70)
+	at org.apache.flink.streaming.api.operators.InternalTimerServiceImpl.advanceWatermark(InternalTimerServiceImpl.java:302)
+	at org.apache.flink.streaming.api.operators.InternalTimeServiceManagerImpl.advanceWatermark(InternalTimeServiceManagerImpl.java:180)
+	at org.apache.flink.streaming.api.operators.AbstractStreamOperator.processWatermark(AbstractStreamOperator.java:603)
+	at org.apache.flink.streaming.runtime.tasks.OneInputStreamTask$StreamTaskNetworkOutput.emitWatermark(OneInputStreamTask.java:239)
+	at org.apache.flink.streaming.runtime.watermarkstatus.StatusWatermarkValve.findAndOutputNewMinWatermarkAcrossAlignedChannels(StatusWatermarkValve.java:200)
+	at org.apache.flink.streaming.runtime.watermarkstatus.StatusWatermarkValve.inputWatermark(StatusWatermarkValve.java:105)
+	at org.apache.flink.streaming.runtime.io.AbstractStreamTaskNetworkInput.processElement(AbstractStreamTaskNetworkInput.java:136)
+	at org.apache.flink.streaming.runtime.io.AbstractStreamTaskNetworkInput.emitNext(AbstractStreamTaskNetworkInput.java:105)
+	at org.apache.flink.streaming.runtime.io.StreamOneInputProcessor.processInput(StreamOneInputProcessor.java:65)
+	at org.apache.flink.streaming.runtime.tasks.StreamTask.processInput(StreamTask.java:496)
+	at org.apache.flink.streaming.runtime.tasks.mailbox.MailboxProcessor.runMailboxLoop(MailboxProcessor.java:203)
+	at org.apache.flink.streaming.runtime.tasks.StreamTask.runMailboxLoop(StreamTask.java:809)
+	at org.apache.flink.streaming.runtime.tasks.StreamTask.invoke(StreamTask.java:761)
+	at org.apache.flink.runtime.taskmanager.Task.runWithSystemExitMonitoring(Task.java:958)
+	at org.apache.flink.runtime.taskmanager.Task.restoreAndInvoke(Task.java:937)
+	at org.apache.flink.runtime.taskmanager.Task.doRun(Task.java:766)
+	at org.apache.flink.runtime.taskmanager.Task.run(Task.java:575)
+	at java.lang.Thread.run(Thread.java:750)
+
+2022-08-09 14:32:35  [ flink-akka.actor.default-dispatcher-9:7758 ] - [ WARN ]  No hostname could be resolved for the IP address 127.0.0.1, using IP address as host name. Local input split assignment (such as for HDFS files) may be impacted.
+2022-08-09 14:33:50  [ flink-akka.actor.default-dispatcher-5:0 ] - [ INFO ]  Slf4jLogger started
+2022-08-09 14:33:50  [ flink-metrics-7:96 ] - [ INFO ]  Slf4jLogger started
+2022-08-09 14:33:50  [ main:448 ] - [ WARN ]  Log file environment variable 'log.file' is not set.
+2022-08-09 14:33:50  [ main:452 ] - [ WARN ]  JobManager log files are unavailable in the web dashboard. Log file location not found in environment variable 'log.file' or configuration key 'web.log.path'.
+2022-08-09 14:33:51  [ Window(TumblingEventTimeWindows(10000), EventTimeTrigger, UrlViewCountAgg, UrlViewCountResult) -> Sink: Print to Std. Out (1/1)#0:1142 ] - [ WARN ]  The operator name Window(TumblingEventTimeWindows(10000), EventTimeTrigger, UrlViewCountAgg, UrlViewCountResult) exceeded the 80 characters length limit and was truncated.
+2022-08-09 14:33:55  [ KeyedProcess -> Sink: Print to Std. Out (1/1)#0:5480 ] - [ WARN ]  KeyedProcess -> Sink: Print to Std. Out (1/1)#0 (969ac5bd66a94c042011c593cb746be5) switched from RUNNING to FAILED with failure cause: java.lang.IndexOutOfBoundsException: Index: 1, Size: 1
+	at java.util.ArrayList.rangeCheck(ArrayList.java:659)
+	at java.util.ArrayList.get(ArrayList.java:435)
+	at com.wmz.apiTest.topN.TopNExample$TopNProcessResult.onTimer(TopNExample.java:109)
+	at org.apache.flink.streaming.api.operators.KeyedProcessOperator.invokeUserFunction(KeyedProcessOperator.java:91)
+	at org.apache.flink.streaming.api.operators.KeyedProcessOperator.onEventTime(KeyedProcessOperator.java:70)
+	at org.apache.flink.streaming.api.operators.InternalTimerServiceImpl.advanceWatermark(InternalTimerServiceImpl.java:302)
+	at org.apache.flink.streaming.api.operators.InternalTimeServiceManagerImpl.advanceWatermark(InternalTimeServiceManagerImpl.java:180)
+	at org.apache.flink.streaming.api.operators.AbstractStreamOperator.processWatermark(AbstractStreamOperator.java:603)
+	at org.apache.flink.streaming.runtime.tasks.OneInputStreamTask$StreamTaskNetworkOutput.emitWatermark(OneInputStreamTask.java:239)
+	at org.apache.flink.streaming.runtime.watermarkstatus.StatusWatermarkValve.findAndOutputNewMinWatermarkAcrossAlignedChannels(StatusWatermarkValve.java:200)
+	at org.apache.flink.streaming.runtime.watermarkstatus.StatusWatermarkValve.inputWatermark(StatusWatermarkValve.java:105)
+	at org.apache.flink.streaming.runtime.io.AbstractStreamTaskNetworkInput.processElement(AbstractStreamTaskNetworkInput.java:136)
+	at org.apache.flink.streaming.runtime.io.AbstractStreamTaskNetworkInput.emitNext(AbstractStreamTaskNetworkInput.java:105)
+	at org.apache.flink.streaming.runtime.io.StreamOneInputProcessor.processInput(StreamOneInputProcessor.java:65)
+	at org.apache.flink.streaming.runtime.tasks.StreamTask.processInput(StreamTask.java:496)
+	at org.apache.flink.streaming.runtime.tasks.mailbox.MailboxProcessor.runMailboxLoop(MailboxProcessor.java:203)
+	at org.apache.flink.streaming.runtime.tasks.StreamTask.runMailboxLoop(StreamTask.java:809)
+	at org.apache.flink.streaming.runtime.tasks.StreamTask.invoke(StreamTask.java:761)
+	at org.apache.flink.runtime.taskmanager.Task.runWithSystemExitMonitoring(Task.java:958)
+	at org.apache.flink.runtime.taskmanager.Task.restoreAndInvoke(Task.java:937)
+	at org.apache.flink.runtime.taskmanager.Task.doRun(Task.java:766)
+	at org.apache.flink.runtime.taskmanager.Task.run(Task.java:575)
+	at java.lang.Thread.run(Thread.java:750)
+
+2022-08-09 14:33:55  [ flink-akka.actor.default-dispatcher-9:5511 ] - [ WARN ]  No hostname could be resolved for the IP address 127.0.0.1, using IP address as host name. Local input split assignment (such as for HDFS files) may be impacted.
+2022-08-09 14:37:28  [ flink-akka.actor.default-dispatcher-5:0 ] - [ INFO ]  Slf4jLogger started
+2022-08-09 14:37:28  [ flink-metrics-5:102 ] - [ INFO ]  Slf4jLogger started
+2022-08-09 14:37:28  [ main:462 ] - [ WARN ]  Log file environment variable 'log.file' is not set.
+2022-08-09 14:37:28  [ main:462 ] - [ WARN ]  JobManager log files are unavailable in the web dashboard. Log file location not found in environment variable 'log.file' or configuration key 'web.log.path'.
+2022-08-09 14:37:29  [ Window(TumblingEventTimeWindows(10000), EventTimeTrigger, UrlViewCountAgg, UrlViewCountResult) -> Sink: Print to Std. Out (1/1)#0:1143 ] - [ WARN ]  The operator name Window(TumblingEventTimeWindows(10000), EventTimeTrigger, UrlViewCountAgg, UrlViewCountResult) exceeded the 80 characters length limit and was truncated.
+2022-08-09 14:37:35  [ KeyedProcess -> Sink: Print to Std. Out (1/1)#0:7524 ] - [ WARN ]  KeyedProcess -> Sink: Print to Std. Out (1/1)#0 (e1b39260361700d7f9b31d9821226e75) switched from RUNNING to FAILED with failure cause: java.lang.IndexOutOfBoundsException: Index: 1, Size: 1
+	at java.util.ArrayList.rangeCheck(ArrayList.java:659)
+	at java.util.ArrayList.get(ArrayList.java:435)
+	at com.wmz.apiTest.topN.TopNExample$TopNProcessResult.onTimer(TopNExample.java:109)
+	at org.apache.flink.streaming.api.operators.KeyedProcessOperator.invokeUserFunction(KeyedProcessOperator.java:91)
+	at org.apache.flink.streaming.api.operators.KeyedProcessOperator.onEventTime(KeyedProcessOperator.java:70)
+	at org.apache.flink.streaming.api.operators.InternalTimerServiceImpl.advanceWatermark(InternalTimerServiceImpl.java:302)
+	at org.apache.flink.streaming.api.operators.InternalTimeServiceManagerImpl.advanceWatermark(InternalTimeServiceManagerImpl.java:180)
+	at org.apache.flink.streaming.api.operators.AbstractStreamOperator.processWatermark(AbstractStreamOperator.java:603)
+	at org.apache.flink.streaming.runtime.tasks.OneInputStreamTask$StreamTaskNetworkOutput.emitWatermark(OneInputStreamTask.java:239)
+	at org.apache.flink.streaming.runtime.watermarkstatus.StatusWatermarkValve.findAndOutputNewMinWatermarkAcrossAlignedChannels(StatusWatermarkValve.java:200)
+	at org.apache.flink.streaming.runtime.watermarkstatus.StatusWatermarkValve.inputWatermark(StatusWatermarkValve.java:105)
+	at org.apache.flink.streaming.runtime.io.AbstractStreamTaskNetworkInput.processElement(AbstractStreamTaskNetworkInput.java:136)
+	at org.apache.flink.streaming.runtime.io.AbstractStreamTaskNetworkInput.emitNext(AbstractStreamTaskNetworkInput.java:105)
+	at org.apache.flink.streaming.runtime.io.StreamOneInputProcessor.processInput(StreamOneInputProcessor.java:65)
+	at org.apache.flink.streaming.runtime.tasks.StreamTask.processInput(StreamTask.java:496)
+	at org.apache.flink.streaming.runtime.tasks.mailbox.MailboxProcessor.runMailboxLoop(MailboxProcessor.java:203)
+	at org.apache.flink.streaming.runtime.tasks.StreamTask.runMailboxLoop(StreamTask.java:809)
+	at org.apache.flink.streaming.runtime.tasks.StreamTask.invoke(StreamTask.java:761)
+	at org.apache.flink.runtime.taskmanager.Task.runWithSystemExitMonitoring(Task.java:958)
+	at org.apache.flink.runtime.taskmanager.Task.restoreAndInvoke(Task.java:937)
+	at org.apache.flink.runtime.taskmanager.Task.doRun(Task.java:766)
+	at org.apache.flink.runtime.taskmanager.Task.run(Task.java:575)
+	at java.lang.Thread.run(Thread.java:750)
+
+2022-08-09 14:37:35  [ flink-akka.actor.default-dispatcher-11:7557 ] - [ WARN ]  No hostname could be resolved for the IP address 127.0.0.1, using IP address as host name. Local input split assignment (such as for HDFS files) may be impacted.
+2022-08-09 14:40:58  [ flink-akka.actor.default-dispatcher-5:0 ] - [ INFO ]  Slf4jLogger started
+2022-08-09 14:40:58  [ flink-metrics-7:97 ] - [ INFO ]  Slf4jLogger started
+2022-08-09 14:40:58  [ main:457 ] - [ WARN ]  Log file environment variable 'log.file' is not set.
+2022-08-09 14:40:58  [ main:461 ] - [ WARN ]  JobManager log files are unavailable in the web dashboard. Log file location not found in environment variable 'log.file' or configuration key 'web.log.path'.
+2022-08-09 14:40:59  [ Window(TumblingEventTimeWindows(10000), EventTimeTrigger, UrlViewCountAgg, UrlViewCountResult) -> Sink: Print to Std. Out (1/1)#0:1137 ] - [ WARN ]  The operator name Window(TumblingEventTimeWindows(10000), EventTimeTrigger, UrlViewCountAgg, UrlViewCountResult) exceeded the 80 characters length limit and was truncated.
+2022-08-09 16:42:54  [ flink-akka.actor.default-dispatcher-5:0 ] - [ INFO ]  Slf4jLogger started
+2022-08-09 16:42:54  [ flink-metrics-5:96 ] - [ INFO ]  Slf4jLogger started
+2022-08-09 16:42:54  [ main:439 ] - [ WARN ]  Log file environment variable 'log.file' is not set.
+2022-08-09 16:42:54  [ main:440 ] - [ WARN ]  JobManager log files are unavailable in the web dashboard. Log file location not found in environment variable 'log.file' or configuration key 'web.log.path'.
+2022-08-09 16:43:36  [ flink-akka.actor.default-dispatcher-5:0 ] - [ INFO ]  Slf4jLogger started
+2022-08-09 16:43:36  [ flink-metrics-6:100 ] - [ INFO ]  Slf4jLogger started
+2022-08-09 16:43:37  [ main:450 ] - [ WARN ]  Log file environment variable 'log.file' is not set.
+2022-08-09 16:43:37  [ main:451 ] - [ WARN ]  JobManager log files are unavailable in the web dashboard. Log file location not found in environment variable 'log.file' or configuration key 'web.log.path'.
+2022-08-09 16:59:28  [ flink-akka.actor.default-dispatcher-5:0 ] - [ INFO ]  Slf4jLogger started
+2022-08-09 16:59:28  [ flink-metrics-7:96 ] - [ INFO ]  Slf4jLogger started
+2022-08-09 16:59:29  [ main:449 ] - [ WARN ]  Log file environment variable 'log.file' is not set.
+2022-08-09 16:59:29  [ main:449 ] - [ WARN ]  JobManager log files are unavailable in the web dashboard. Log file location not found in environment variable 'log.file' or configuration key 'web.log.path'.
+2022-08-09 16:59:32  [ Source: Socket Stream -> Map -> Timestamps/Watermarks -> Sink: Print to Std. Out (1/1)#0:3224 ] - [ WARN ]  Source: Socket Stream -> Map -> Timestamps/Watermarks -> Sink: Print to Std. Out (1/1)#0 (d596a5b1b74dd04c1b212a1ccdd2efe8) switched from RUNNING to FAILED with failure cause: java.net.ConnectException: Connection refused: connect
+	at java.net.DualStackPlainSocketImpl.connect0(Native Method)
+	at java.net.DualStackPlainSocketImpl.socketConnect(DualStackPlainSocketImpl.java:75)
+	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:476)
+	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:218)
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:200)
+	at java.net.PlainSocketImpl.connect(PlainSocketImpl.java:162)
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:394)
+	at java.net.Socket.connect(Socket.java:606)
+	at org.apache.flink.streaming.api.functions.source.SocketTextStreamFunction.run(SocketTextStreamFunction.java:104)
+	at org.apache.flink.streaming.api.operators.StreamSource.run(StreamSource.java:116)
+	at org.apache.flink.streaming.api.operators.StreamSource.run(StreamSource.java:73)
+	at org.apache.flink.streaming.runtime.tasks.SourceStreamTask$LegacySourceFunctionThread.run(SourceStreamTask.java:323)
+
+2022-08-09 16:59:32  [ flink-akka.actor.default-dispatcher-10:3264 ] - [ WARN ]  No hostname could be resolved for the IP address 127.0.0.1, using IP address as host name. Local input split assignment (such as for HDFS files) may be impacted.
+2022-08-09 17:00:27  [ flink-akka.actor.default-dispatcher-5:0 ] - [ INFO ]  Slf4jLogger started
+2022-08-09 17:00:27  [ flink-metrics-7:98 ] - [ INFO ]  Slf4jLogger started
+2022-08-09 17:00:28  [ main:448 ] - [ WARN ]  Log file environment variable 'log.file' is not set.
+2022-08-09 17:00:28  [ main:449 ] - [ WARN ]  JobManager log files are unavailable in the web dashboard. Log file location not found in environment variable 'log.file' or configuration key 'web.log.path'.
+2022-08-09 17:34:58  [ flink-akka.actor.default-dispatcher-5:0 ] - [ INFO ]  Slf4jLogger started
+2022-08-09 17:34:59  [ flink-metrics-4:97 ] - [ INFO ]  Slf4jLogger started
+2022-08-09 17:34:59  [ main:462 ] - [ WARN ]  Log file environment variable 'log.file' is not set.
+2022-08-09 17:34:59  [ main:462 ] - [ WARN ]  JobManager log files are unavailable in the web dashboard. Log file location not found in environment variable 'log.file' or configuration key 'web.log.path'.
+2022-08-09 20:11:21  [ flink-akka.actor.default-dispatcher-5:0 ] - [ INFO ]  Slf4jLogger started
+2022-08-09 20:11:21  [ flink-metrics-7:113 ] - [ INFO ]  Slf4jLogger started
+2022-08-09 20:11:21  [ main:747 ] - [ WARN ]  Log file environment variable 'log.file' is not set.
+2022-08-09 20:11:21  [ main:749 ] - [ WARN ]  JobManager log files are unavailable in the web dashboard. Log file location not found in environment variable 'log.file' or configuration key 'web.log.path'.
+2022-08-09 20:16:27  [ flink-akka.actor.default-dispatcher-5:0 ] - [ INFO ]  Slf4jLogger started
+2022-08-09 20:16:27  [ flink-metrics-7:111 ] - [ INFO ]  Slf4jLogger started
+2022-08-09 20:16:27  [ main:486 ] - [ WARN ]  Log file environment variable 'log.file' is not set.
+2022-08-09 20:16:27  [ main:486 ] - [ WARN ]  JobManager log files are unavailable in the web dashboard. Log file location not found in environment variable 'log.file' or configuration key 'web.log.path'.
+2022-08-09 20:17:27  [ flink-akka.actor.default-dispatcher-5:0 ] - [ INFO ]  Slf4jLogger started
+2022-08-09 20:17:27  [ flink-metrics-5:105 ] - [ INFO ]  Slf4jLogger started
+2022-08-09 20:17:27  [ main:447 ] - [ WARN ]  Log file environment variable 'log.file' is not set.
+2022-08-09 20:17:27  [ main:447 ] - [ WARN ]  JobManager log files are unavailable in the web dashboard. Log file location not found in environment variable 'log.file' or configuration key 'web.log.path'.
+2022-08-09 20:17:53  [ flink-akka.actor.default-dispatcher-5:0 ] - [ INFO ]  Slf4jLogger started
+2022-08-09 20:17:53  [ flink-metrics-6:98 ] - [ INFO ]  Slf4jLogger started
+2022-08-09 20:17:54  [ main:433 ] - [ WARN ]  Log file environment variable 'log.file' is not set.
+2022-08-09 20:17:54  [ main:433 ] - [ WARN ]  JobManager log files are unavailable in the web dashboard. Log file location not found in environment variable 'log.file' or configuration key 'web.log.path'.
+2022-08-09 20:18:25  [ flink-akka.actor.default-dispatcher-5:0 ] - [ INFO ]  Slf4jLogger started
+2022-08-09 20:18:25  [ flink-metrics-6:106 ] - [ INFO ]  Slf4jLogger started
+2022-08-09 20:18:26  [ main:461 ] - [ WARN ]  Log file environment variable 'log.file' is not set.
+2022-08-09 20:18:26  [ main:463 ] - [ WARN ]  JobManager log files are unavailable in the web dashboard. Log file location not found in environment variable 'log.file' or configuration key 'web.log.path'.
+2022-08-09 20:54:09  [ flink-akka.actor.default-dispatcher-5:0 ] - [ INFO ]  Slf4jLogger started
+2022-08-09 20:54:09  [ flink-metrics-7:117 ] - [ INFO ]  Slf4jLogger started
+2022-08-09 20:54:09  [ main:475 ] - [ WARN ]  Log file environment variable 'log.file' is not set.
+2022-08-09 20:54:09  [ main:475 ] - [ WARN ]  JobManager log files are unavailable in the web dashboard. Log file location not found in environment variable 'log.file' or configuration key 'web.log.path'.
+2022-08-09 21:20:49  [ flink-akka.actor.default-dispatcher-5:0 ] - [ INFO ]  Slf4jLogger started
+2022-08-09 21:20:49  [ flink-metrics-5:100 ] - [ INFO ]  Slf4jLogger started
+2022-08-09 21:20:50  [ main:460 ] - [ WARN ]  Log file environment variable 'log.file' is not set.
+2022-08-09 21:20:50  [ main:460 ] - [ WARN ]  JobManager log files are unavailable in the web dashboard. Log file location not found in environment variable 'log.file' or configuration key 'web.log.path'.
+2022-08-09 21:35:29  [ flink-akka.actor.default-dispatcher-5:0 ] - [ INFO ]  Slf4jLogger started
+2022-08-09 21:35:29  [ flink-metrics-7:106 ] - [ INFO ]  Slf4jLogger started
+2022-08-09 21:35:29  [ main:486 ] - [ WARN ]  Log file environment variable 'log.file' is not set.
+2022-08-09 21:35:29  [ main:486 ] - [ WARN ]  JobManager log files are unavailable in the web dashboard. Log file location not found in environment variable 'log.file' or configuration key 'web.log.path'.
+2022-08-09 21:36:53  [ flink-akka.actor.default-dispatcher-7:0 ] - [ INFO ]  Slf4jLogger started
+2022-08-09 21:36:53  [ flink-metrics-7:121 ] - [ INFO ]  Slf4jLogger started
+2022-08-09 21:36:54  [ main:576 ] - [ WARN ]  Log file environment variable 'log.file' is not set.
+2022-08-09 21:36:54  [ main:576 ] - [ WARN ]  JobManager log files are unavailable in the web dashboard. Log file location not found in environment variable 'log.file' or configuration key 'web.log.path'.
