@@ -1,9 +1,9 @@
 package com.wmz.apiTest.waterMark;
 
 public class Event {
-    String user;
-    String url;
-    Long timestamp;
+    public String user;
+    public String url;
+    public Long timestamp;
 
     public Event(String user, String url, Long timestamp) {
         this.user = user;
