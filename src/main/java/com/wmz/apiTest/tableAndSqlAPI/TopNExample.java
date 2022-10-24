@@ -1,8 +1,10 @@
 package com.wmz.apiTest.tableAndSqlAPI;
 
+import org.apache.flink.streaming.api.datastream.DataStreamSink;
 import org.apache.flink.streaming.api.environment.StreamExecutionEnvironment;
 import org.apache.flink.table.api.Table;
 import org.apache.flink.table.api.bridge.java.StreamTableEnvironment;
+import org.apache.flink.types.Row;
 
 public class TopNExample {
     public static void main(String[] args) throws Exception {
@@ -58,9 +60,7 @@ public class TopNExample {
                 ") WHERE row_num <=2 "
         );
 
-        tableEnv.toChangelogStream(windowTopNResultTable).print("topN");
-
-
+        DataStreamSink<Row> topN = tableEnv.toChangelogStream(windowTopNResultTable).print("topN");
 
 
         env.execute();

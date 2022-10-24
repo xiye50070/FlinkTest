@@ -51,11 +51,21 @@ public class SimpleTableExample {
 
         // 聚合转换
         tableEnv.createTemporaryView("clickTable",eventTable);
-        Table aggResult = tableEnv.sqlQuery("select user, count(url) as cnt from clickTable group by user");
-        tableEnv.toChangelogStream(aggResult).print("agg");
+        tableEnv.executeSql("select * from clickTable").print();
+//        Table aggResult = tableEnv.sqlQuery("select user, count(url) as cnt from clickTable group by user");
+//        tableEnv.toChangelogStream(aggResult).print("agg");
 
 
 
         env.execute();
     }
 }
+
+/**
+ * CREATE CATALOG myhive WITH (
+ *     'type' = 'hive',
+ *     'default-database' = 'mydatabase',
+ *     'hive-conf-dir' = '/opt/hive/conf'
+ * );
+ */
+

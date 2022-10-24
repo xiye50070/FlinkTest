@@ -18,6 +18,7 @@ import org.apache.flink.streaming.api.windowing.assigners.TumblingEventTimeWindo
 import org.apache.flink.streaming.api.windowing.assigners.TumblingProcessingTimeWindows;
 import org.apache.flink.streaming.api.windowing.time.Time;
 import org.apache.flink.streaming.api.windowing.windows.TimeWindow;
+import org.apache.flink.table.connector.ChangelogMode;
 import org.apache.flink.util.Collector;
 
 import java.sql.Timestamp;
@@ -38,6 +39,8 @@ public class TopNExample {
                                 return element.getTimestamp();
                             }
                         }));
+
+        ChangelogMode.all()
 
         //1、按照url分组，统计窗口内每个url访问量
         SingleOutputStreamOperator<UrlViewCount> urlCountStream = stream.keyBy(Event::getUrl)

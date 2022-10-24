@@ -1,0 +1,221 @@
+2022-08-18 10:11:53  [ flink-akka.actor.default-dispatcher-5:1 ] - [ INFO ]  Slf4jLogger started
+2022-08-18 10:11:53  [ flink-metrics-6:130 ] - [ INFO ]  Slf4jLogger started
+2022-08-18 10:11:53  [ main:594 ] - [ WARN ]  Log file environment variable 'log.file' is not set.
+2022-08-18 10:11:53  [ main:595 ] - [ WARN ]  JobManager log files are unavailable in the web dashboard. Log file location not found in environment variable 'log.file' or configuration key 'web.log.path'.
+2022-08-18 10:11:55  [ Split Reader: Custom File Source -> (Map -> Sink: Print to Std. Out, Sink: Print to Std. Out) (1/1)#0:2285 ] - [ WARN ]  not processing any records while closed
+2022-08-18 10:14:40  [ flink-akka.actor.default-dispatcher-4:1 ] - [ INFO ]  Slf4jLogger started
+2022-08-18 10:14:40  [ flink-metrics-6:101 ] - [ INFO ]  Slf4jLogger started
+2022-08-18 10:14:40  [ main:448 ] - [ WARN ]  Log file environment variable 'log.file' is not set.
+2022-08-18 10:14:40  [ main:448 ] - [ WARN ]  JobManager log files are unavailable in the web dashboard. Log file location not found in environment variable 'log.file' or configuration key 'web.log.path'.
+2022-08-18 10:14:41  [ Split Reader: Custom File Source -> (Map -> Sink: Print to Std. Out, Sink: Print to Std. Out) (1/1)#0:1635 ] - [ WARN ]  Split Reader: Custom File Source -> (Map -> Sink: Print to Std. Out, Sink: Print to Std. Out) (1/1)#0 (19cb91a9e8f21446c8745bc20b1a548d) switched from RUNNING to FAILED with failure cause: java.lang.IllegalArgumentException: Accessing a field by name is not supported in position-based field mode.
+	at org.apache.flink.types.Row.setField(Row.java:357)
+	at com.wmz.apiTest.source.SourceTest2_File$1.map(SourceTest2_File.java:19)
+	at com.wmz.apiTest.source.SourceTest2_File$1.map(SourceTest2_File.java:14)
+	at org.apache.flink.streaming.api.operators.StreamMap.processElement(StreamMap.java:38)
+	at org.apache.flink.streaming.runtime.tasks.CopyingChainingOutput.pushToOperator(CopyingChainingOutput.java:82)
+	at org.apache.flink.streaming.runtime.tasks.CopyingChainingOutput.collect(CopyingChainingOutput.java:57)
+	at org.apache.flink.streaming.runtime.tasks.CopyingChainingOutput.collect(CopyingChainingOutput.java:29)
+	at org.apache.flink.streaming.runtime.tasks.BroadcastingOutputCollector.collect(BroadcastingOutputCollector.java:77)
+	at org.apache.flink.streaming.runtime.tasks.BroadcastingOutputCollector.collect(BroadcastingOutputCollector.java:32)
+	at org.apache.flink.streaming.api.operators.CountingOutput.collect(CountingOutput.java:56)
+	at org.apache.flink.streaming.api.operators.CountingOutput.collect(CountingOutput.java:29)
+	at org.apache.flink.streaming.api.operators.StreamSourceContexts$ManualWatermarkContext.processAndCollect(StreamSourceContexts.java:418)
+	at org.apache.flink.streaming.api.operators.StreamSourceContexts$WatermarkContext.collect(StreamSourceContexts.java:513)
+	at org.apache.flink.streaming.api.operators.StreamSourceContexts$SwitchingOnClose.collect(StreamSourceContexts.java:103)
+	at org.apache.flink.streaming.api.functions.source.ContinuousFileReaderOperator.readAndCollectRecord(ContinuousFileReaderOperator.java:392)
+	at org.apache.flink.streaming.api.functions.source.ContinuousFileReaderOperator.processRecord(ContinuousFileReaderOperator.java:352)
+	at org.apache.flink.streaming.api.functions.source.ContinuousFileReaderOperator.lambda$new$0(ContinuousFileReaderOperator.java:240)
+	at org.apache.flink.streaming.runtime.tasks.StreamTaskActionExecutor$1.runThrowing(StreamTaskActionExecutor.java:50)
+	at org.apache.flink.streaming.runtime.tasks.mailbox.Mail.run(Mail.java:90)
+	at org.apache.flink.streaming.runtime.tasks.mailbox.MailboxProcessor.processMailsNonBlocking(MailboxProcessor.java:353)
+	at org.apache.flink.streaming.runtime.tasks.mailbox.MailboxProcessor.processMail(MailboxProcessor.java:317)
+	at org.apache.flink.streaming.runtime.tasks.mailbox.MailboxProcessor.runMailboxLoop(MailboxProcessor.java:201)
+	at org.apache.flink.streaming.runtime.tasks.StreamTask.runMailboxLoop(StreamTask.java:809)
+	at org.apache.flink.streaming.runtime.tasks.StreamTask.invoke(StreamTask.java:761)
+	at org.apache.flink.runtime.taskmanager.Task.runWithSystemExitMonitoring(Task.java:958)
+	at org.apache.flink.runtime.taskmanager.Task.restoreAndInvoke(Task.java:937)
+	at org.apache.flink.runtime.taskmanager.Task.doRun(Task.java:766)
+	at org.apache.flink.runtime.taskmanager.Task.run(Task.java:575)
+	at java.lang.Thread.run(Thread.java:750)
+
+2022-08-18 10:14:41  [ flink-akka.actor.default-dispatcher-6:1657 ] - [ WARN ]  No hostname could be resolved for the IP address 127.0.0.1, using IP address as host name. Local input split assignment (such as for HDFS files) may be impacted.
+2022-08-18 10:42:36  [ flink-akka.actor.default-dispatcher-5:1 ] - [ INFO ]  Slf4jLogger started
+2022-08-18 10:42:36  [ flink-metrics-7:99 ] - [ INFO ]  Slf4jLogger started
+2022-08-18 10:42:36  [ main:459 ] - [ WARN ]  Log file environment variable 'log.file' is not set.
+2022-08-18 10:42:36  [ main:460 ] - [ WARN ]  JobManager log files are unavailable in the web dashboard. Log file location not found in environment variable 'log.file' or configuration key 'web.log.path'.
+2022-08-18 10:42:38  [ Split Reader: Custom File Source -> Sink: Print to Std. Out (1/1)#0:1687 ] - [ WARN ]  not processing any records while closed
+2022-08-18 10:42:38  [ Split Reader: Custom File Source -> Sink: Print to Std. Out (1/1)#0:1687 ] - [ WARN ]  not processing any records while closed
+2022-08-18 11:27:08  [ flink-akka.actor.default-dispatcher-5:0 ] - [ INFO ]  Slf4jLogger started
+2022-08-18 11:27:08  [ flink-metrics-7:99 ] - [ INFO ]  Slf4jLogger started
+2022-08-18 11:27:09  [ main:465 ] - [ WARN ]  Log file environment variable 'log.file' is not set.
+2022-08-18 11:27:09  [ main:465 ] - [ WARN ]  JobManager log files are unavailable in the web dashboard. Log file location not found in environment variable 'log.file' or configuration key 'web.log.path'.
+2022-08-18 11:27:10  [ Split Reader: Custom File Source -> Sink: Print to Std. Out (1/1)#0:1728 ] - [ WARN ]  not processing any records while closed
+2022-08-18 11:27:10  [ Split Reader: Custom File Source -> Map -> Sink: Print to Std. Out (1/1)#0:1729 ] - [ WARN ]  Split Reader: Custom File Source -> Map -> Sink: Print to Std. Out (1/1)#0 (079310f7837483fe0fc60e913ea7dc2b) switched from RUNNING to FAILED with failure cause: java.lang.RuntimeException: Row arity of from (1) does not match this serializer's field length (3).
+	at org.apache.flink.api.java.typeutils.runtime.RowSerializer.copyPositionBased(RowSerializer.java:153)
+	at org.apache.flink.api.java.typeutils.runtime.RowSerializer.copy(RowSerializer.java:142)
+	at org.apache.flink.api.java.typeutils.runtime.RowSerializer.copy(RowSerializer.java:72)
+	at org.apache.flink.streaming.runtime.tasks.CopyingChainingOutput.pushToOperator(CopyingChainingOutput.java:80)
+	at org.apache.flink.streaming.runtime.tasks.CopyingChainingOutput.collect(CopyingChainingOutput.java:57)
+	at org.apache.flink.streaming.runtime.tasks.CopyingChainingOutput.collect(CopyingChainingOutput.java:29)
+	at org.apache.flink.streaming.api.operators.CountingOutput.collect(CountingOutput.java:56)
+	at org.apache.flink.streaming.api.operators.CountingOutput.collect(CountingOutput.java:29)
+	at org.apache.flink.streaming.api.operators.StreamMap.processElement(StreamMap.java:38)
+	at org.apache.flink.streaming.runtime.tasks.CopyingChainingOutput.pushToOperator(CopyingChainingOutput.java:82)
+	at org.apache.flink.streaming.runtime.tasks.CopyingChainingOutput.collect(CopyingChainingOutput.java:57)
+	at org.apache.flink.streaming.runtime.tasks.CopyingChainingOutput.collect(CopyingChainingOutput.java:29)
+	at org.apache.flink.streaming.api.operators.CountingOutput.collect(CountingOutput.java:56)
+	at org.apache.flink.streaming.api.operators.CountingOutput.collect(CountingOutput.java:29)
+	at org.apache.flink.streaming.api.operators.StreamSourceContexts$ManualWatermarkContext.processAndCollect(StreamSourceContexts.java:418)
+	at org.apache.flink.streaming.api.operators.StreamSourceContexts$WatermarkContext.collect(StreamSourceContexts.java:513)
+	at org.apache.flink.streaming.api.operators.StreamSourceContexts$SwitchingOnClose.collect(StreamSourceContexts.java:103)
+	at org.apache.flink.streaming.api.functions.source.ContinuousFileReaderOperator.readAndCollectRecord(ContinuousFileReaderOperator.java:392)
+	at org.apache.flink.streaming.api.functions.source.ContinuousFileReaderOperator.processRecord(ContinuousFileReaderOperator.java:352)
+	at org.apache.flink.streaming.api.functions.source.ContinuousFileReaderOperator.lambda$new$0(ContinuousFileReaderOperator.java:240)
+	at org.apache.flink.streaming.runtime.tasks.StreamTaskActionExecutor$1.runThrowing(StreamTaskActionExecutor.java:50)
+	at org.apache.flink.streaming.runtime.tasks.mailbox.Mail.run(Mail.java:90)
+	at org.apache.flink.streaming.runtime.tasks.mailbox.MailboxProcessor.processMailsNonBlocking(MailboxProcessor.java:353)
+	at org.apache.flink.streaming.runtime.tasks.mailbox.MailboxProcessor.processMail(MailboxProcessor.java:317)
+	at org.apache.flink.streaming.runtime.tasks.mailbox.MailboxProcessor.runMailboxLoop(MailboxProcessor.java:201)
+	at org.apache.flink.streaming.runtime.tasks.StreamTask.runMailboxLoop(StreamTask.java:809)
+	at org.apache.flink.streaming.runtime.tasks.StreamTask.invoke(StreamTask.java:761)
+	at org.apache.flink.runtime.taskmanager.Task.runWithSystemExitMonitoring(Task.java:958)
+	at org.apache.flink.runtime.taskmanager.Task.restoreAndInvoke(Task.java:937)
+	at org.apache.flink.runtime.taskmanager.Task.doRun(Task.java:766)
+	at org.apache.flink.runtime.taskmanager.Task.run(Task.java:575)
+	at java.lang.Thread.run(Thread.java:750)
+
+2022-08-18 11:27:10  [ flink-akka.actor.default-dispatcher-7:1742 ] - [ WARN ]  No hostname could be resolved for the IP address 127.0.0.1, using IP address as host name. Local input split assignment (such as for HDFS files) may be impacted.
+2022-08-18 11:31:30  [ flink-akka.actor.default-dispatcher-5:1 ] - [ INFO ]  Slf4jLogger started
+2022-08-18 11:31:30  [ flink-metrics-6:98 ] - [ INFO ]  Slf4jLogger started
+2022-08-18 11:31:30  [ main:449 ] - [ WARN ]  Log file environment variable 'log.file' is not set.
+2022-08-18 11:31:30  [ main:449 ] - [ WARN ]  JobManager log files are unavailable in the web dashboard. Log file location not found in environment variable 'log.file' or configuration key 'web.log.path'.
+2022-08-18 11:31:31  [ Split Reader: Custom File Source -> Sink: Print to Std. Out (1/1)#0:1634 ] - [ WARN ]  not processing any records while closed
+2022-08-18 11:31:31  [ Split Reader: Custom File Source -> Map -> Sink: Print to Std. Out (1/1)#0:1635 ] - [ WARN ]  Split Reader: Custom File Source -> Map -> Sink: Print to Std. Out (1/1)#0 (faf89bdaa33b8d6a20896e3c9b1cab94) switched from RUNNING to FAILED with failure cause: java.lang.RuntimeException: Row arity of from (1) does not match this serializer's field length (3).
+	at org.apache.flink.api.java.typeutils.runtime.RowSerializer.copyPositionBased(RowSerializer.java:153)
+	at org.apache.flink.api.java.typeutils.runtime.RowSerializer.copy(RowSerializer.java:142)
+	at org.apache.flink.api.java.typeutils.runtime.RowSerializer.copy(RowSerializer.java:72)
+	at org.apache.flink.streaming.runtime.tasks.CopyingChainingOutput.pushToOperator(CopyingChainingOutput.java:80)
+	at org.apache.flink.streaming.runtime.tasks.CopyingChainingOutput.collect(CopyingChainingOutput.java:57)
+	at org.apache.flink.streaming.runtime.tasks.CopyingChainingOutput.collect(CopyingChainingOutput.java:29)
+	at org.apache.flink.streaming.api.operators.CountingOutput.collect(CountingOutput.java:56)
+	at org.apache.flink.streaming.api.operators.CountingOutput.collect(CountingOutput.java:29)
+	at org.apache.flink.streaming.api.operators.StreamMap.processElement(StreamMap.java:38)
+	at org.apache.flink.streaming.runtime.tasks.CopyingChainingOutput.pushToOperator(CopyingChainingOutput.java:82)
+	at org.apache.flink.streaming.runtime.tasks.CopyingChainingOutput.collect(CopyingChainingOutput.java:57)
+	at org.apache.flink.streaming.runtime.tasks.CopyingChainingOutput.collect(CopyingChainingOutput.java:29)
+	at org.apache.flink.streaming.api.operators.CountingOutput.collect(CountingOutput.java:56)
+	at org.apache.flink.streaming.api.operators.CountingOutput.collect(CountingOutput.java:29)
+	at org.apache.flink.streaming.api.operators.StreamSourceContexts$ManualWatermarkContext.processAndCollect(StreamSourceContexts.java:418)
+	at org.apache.flink.streaming.api.operators.StreamSourceContexts$WatermarkContext.collect(StreamSourceContexts.java:513)
+	at org.apache.flink.streaming.api.operators.StreamSourceContexts$SwitchingOnClose.collect(StreamSourceContexts.java:103)
+	at org.apache.flink.streaming.api.functions.source.ContinuousFileReaderOperator.readAndCollectRecord(ContinuousFileReaderOperator.java:392)
+	at org.apache.flink.streaming.api.functions.source.ContinuousFileReaderOperator.processRecord(ContinuousFileReaderOperator.java:352)
+	at org.apache.flink.streaming.api.functions.source.ContinuousFileReaderOperator.lambda$new$0(ContinuousFileReaderOperator.java:240)
+	at org.apache.flink.streaming.runtime.tasks.StreamTaskActionExecutor$1.runThrowing(StreamTaskActionExecutor.java:50)
+	at org.apache.flink.streaming.runtime.tasks.mailbox.Mail.run(Mail.java:90)
+	at org.apache.flink.streaming.runtime.tasks.mailbox.MailboxProcessor.processMailsNonBlocking(MailboxProcessor.java:353)
+	at org.apache.flink.streaming.runtime.tasks.mailbox.MailboxProcessor.processMail(MailboxProcessor.java:317)
+	at org.apache.flink.streaming.runtime.tasks.mailbox.MailboxProcessor.runMailboxLoop(MailboxProcessor.java:201)
+	at org.apache.flink.streaming.runtime.tasks.StreamTask.runMailboxLoop(StreamTask.java:809)
+	at org.apache.flink.streaming.runtime.tasks.StreamTask.invoke(StreamTask.java:761)
+	at org.apache.flink.runtime.taskmanager.Task.runWithSystemExitMonitoring(Task.java:958)
+	at org.apache.flink.runtime.taskmanager.Task.restoreAndInvoke(Task.java:937)
+	at org.apache.flink.runtime.taskmanager.Task.doRun(Task.java:766)
+	at org.apache.flink.runtime.taskmanager.Task.run(Task.java:575)
+	at java.lang.Thread.run(Thread.java:750)
+
+2022-08-18 11:31:31  [ flink-akka.actor.default-dispatcher-5:1650 ] - [ WARN ]  No hostname could be resolved for the IP address 127.0.0.1, using IP address as host name. Local input split assignment (such as for HDFS files) may be impacted.
+2022-08-18 11:32:57  [ flink-akka.actor.default-dispatcher-6:1 ] - [ INFO ]  Slf4jLogger started
+2022-08-18 11:32:57  [ flink-metrics-7:101 ] - [ INFO ]  Slf4jLogger started
+2022-08-18 11:32:58  [ main:451 ] - [ WARN ]  Log file environment variable 'log.file' is not set.
+2022-08-18 11:32:58  [ main:451 ] - [ WARN ]  JobManager log files are unavailable in the web dashboard. Log file location not found in environment variable 'log.file' or configuration key 'web.log.path'.
+2022-08-18 11:32:59  [ Split Reader: Custom File Source -> Sink: Print to Std. Out (1/1)#0:1702 ] - [ WARN ]  not processing any records while closed
+2022-08-18 11:32:59  [ Split Reader: Custom File Source -> Map -> Sink: Print to Std. Out (1/1)#0:1703 ] - [ WARN ]  Split Reader: Custom File Source -> Map -> Sink: Print to Std. Out (1/1)#0 (336751d5c670297f725a6f06028fac20) switched from RUNNING to FAILED with failure cause: java.lang.ClassCastException: java.lang.String cannot be cast to java.lang.Long
+	at org.apache.flink.api.common.typeutils.base.LongSerializer.copy(LongSerializer.java:30)
+	at org.apache.flink.api.java.typeutils.runtime.RowSerializer.copyPositionBased(RowSerializer.java:163)
+	at org.apache.flink.api.java.typeutils.runtime.RowSerializer.copy(RowSerializer.java:142)
+	at org.apache.flink.api.java.typeutils.runtime.RowSerializer.copy(RowSerializer.java:72)
+	at org.apache.flink.streaming.runtime.tasks.CopyingChainingOutput.pushToOperator(CopyingChainingOutput.java:80)
+	at org.apache.flink.streaming.runtime.tasks.CopyingChainingOutput.collect(CopyingChainingOutput.java:57)
+	at org.apache.flink.streaming.runtime.tasks.CopyingChainingOutput.collect(CopyingChainingOutput.java:29)
+	at org.apache.flink.streaming.api.operators.CountingOutput.collect(CountingOutput.java:56)
+	at org.apache.flink.streaming.api.operators.CountingOutput.collect(CountingOutput.java:29)
+	at org.apache.flink.streaming.api.operators.StreamMap.processElement(StreamMap.java:38)
+	at org.apache.flink.streaming.runtime.tasks.CopyingChainingOutput.pushToOperator(CopyingChainingOutput.java:82)
+	at org.apache.flink.streaming.runtime.tasks.CopyingChainingOutput.collect(CopyingChainingOutput.java:57)
+	at org.apache.flink.streaming.runtime.tasks.CopyingChainingOutput.collect(CopyingChainingOutput.java:29)
+	at org.apache.flink.streaming.api.operators.CountingOutput.collect(CountingOutput.java:56)
+	at org.apache.flink.streaming.api.operators.CountingOutput.collect(CountingOutput.java:29)
+	at org.apache.flink.streaming.api.operators.StreamSourceContexts$ManualWatermarkContext.processAndCollect(StreamSourceContexts.java:418)
+	at org.apache.flink.streaming.api.operators.StreamSourceContexts$WatermarkContext.collect(StreamSourceContexts.java:513)
+	at org.apache.flink.streaming.api.operators.StreamSourceContexts$SwitchingOnClose.collect(StreamSourceContexts.java:103)
+	at org.apache.flink.streaming.api.functions.source.ContinuousFileReaderOperator.readAndCollectRecord(ContinuousFileReaderOperator.java:392)
+	at org.apache.flink.streaming.api.functions.source.ContinuousFileReaderOperator.processRecord(ContinuousFileReaderOperator.java:352)
+	at org.apache.flink.streaming.api.functions.source.ContinuousFileReaderOperator.lambda$new$0(ContinuousFileReaderOperator.java:240)
+	at org.apache.flink.streaming.runtime.tasks.StreamTaskActionExecutor$1.runThrowing(StreamTaskActionExecutor.java:50)
+	at org.apache.flink.streaming.runtime.tasks.mailbox.Mail.run(Mail.java:90)
+	at org.apache.flink.streaming.runtime.tasks.mailbox.MailboxProcessor.processMailsNonBlocking(MailboxProcessor.java:353)
+	at org.apache.flink.streaming.runtime.tasks.mailbox.MailboxProcessor.processMail(MailboxProcessor.java:317)
+	at org.apache.flink.streaming.runtime.tasks.mailbox.MailboxProcessor.runMailboxLoop(MailboxProcessor.java:201)
+	at org.apache.flink.streaming.runtime.tasks.StreamTask.runMailboxLoop(StreamTask.java:809)
+	at org.apache.flink.streaming.runtime.tasks.StreamTask.invoke(StreamTask.java:761)
+	at org.apache.flink.runtime.taskmanager.Task.runWithSystemExitMonitoring(Task.java:958)
+	at org.apache.flink.runtime.taskmanager.Task.restoreAndInvoke(Task.java:937)
+	at org.apache.flink.runtime.taskmanager.Task.doRun(Task.java:766)
+	at org.apache.flink.runtime.taskmanager.Task.run(Task.java:575)
+	at java.lang.Thread.run(Thread.java:750)
+
+2022-08-18 11:32:59  [ flink-akka.actor.default-dispatcher-9:1716 ] - [ WARN ]  No hostname could be resolved for the IP address 127.0.0.1, using IP address as host name. Local input split assignment (such as for HDFS files) may be impacted.
+2022-08-18 11:33:41  [ flink-akka.actor.default-dispatcher-5:1 ] - [ INFO ]  Slf4jLogger started
+2022-08-18 11:33:41  [ flink-metrics-4:103 ] - [ INFO ]  Slf4jLogger started
+2022-08-18 11:33:42  [ main:454 ] - [ WARN ]  Log file environment variable 'log.file' is not set.
+2022-08-18 11:33:42  [ main:454 ] - [ WARN ]  JobManager log files are unavailable in the web dashboard. Log file location not found in environment variable 'log.file' or configuration key 'web.log.path'.
+2022-08-18 11:33:43  [ Split Reader: Custom File Source -> Sink: Print to Std. Out (1/1)#0:1647 ] - [ WARN ]  not processing any records while closed
+2022-08-18 11:33:43  [ Split Reader: Custom File Source -> Map -> Sink: Print to Std. Out (1/1)#0:1648 ] - [ WARN ]  Split Reader: Custom File Source -> Map -> Sink: Print to Std. Out (1/1)#0 (b105fbbf2fc98786476f35da6042e29b) switched from RUNNING to FAILED with failure cause: java.lang.ClassCastException: java.lang.String cannot be cast to java.lang.Double
+	at org.apache.flink.api.common.typeutils.base.DoubleSerializer.copy(DoubleSerializer.java:30)
+	at org.apache.flink.api.java.typeutils.runtime.RowSerializer.copyPositionBased(RowSerializer.java:163)
+	at org.apache.flink.api.java.typeutils.runtime.RowSerializer.copy(RowSerializer.java:142)
+	at org.apache.flink.api.java.typeutils.runtime.RowSerializer.copy(RowSerializer.java:72)
+	at org.apache.flink.streaming.runtime.tasks.CopyingChainingOutput.pushToOperator(CopyingChainingOutput.java:80)
+	at org.apache.flink.streaming.runtime.tasks.CopyingChainingOutput.collect(CopyingChainingOutput.java:57)
+	at org.apache.flink.streaming.runtime.tasks.CopyingChainingOutput.collect(CopyingChainingOutput.java:29)
+	at org.apache.flink.streaming.api.operators.CountingOutput.collect(CountingOutput.java:56)
+	at org.apache.flink.streaming.api.operators.CountingOutput.collect(CountingOutput.java:29)
+	at org.apache.flink.streaming.api.operators.StreamMap.processElement(StreamMap.java:38)
+	at org.apache.flink.streaming.runtime.tasks.CopyingChainingOutput.pushToOperator(CopyingChainingOutput.java:82)
+	at org.apache.flink.streaming.runtime.tasks.CopyingChainingOutput.collect(CopyingChainingOutput.java:57)
+	at org.apache.flink.streaming.runtime.tasks.CopyingChainingOutput.collect(CopyingChainingOutput.java:29)
+	at org.apache.flink.streaming.api.operators.CountingOutput.collect(CountingOutput.java:56)
+	at org.apache.flink.streaming.api.operators.CountingOutput.collect(CountingOutput.java:29)
+	at org.apache.flink.streaming.api.operators.StreamSourceContexts$ManualWatermarkContext.processAndCollect(StreamSourceContexts.java:418)
+	at org.apache.flink.streaming.api.operators.StreamSourceContexts$WatermarkContext.collect(StreamSourceContexts.java:513)
+	at org.apache.flink.streaming.api.operators.StreamSourceContexts$SwitchingOnClose.collect(StreamSourceContexts.java:103)
+	at org.apache.flink.streaming.api.functions.source.ContinuousFileReaderOperator.readAndCollectRecord(ContinuousFileReaderOperator.java:392)
+	at org.apache.flink.streaming.api.functions.source.ContinuousFileReaderOperator.processRecord(ContinuousFileReaderOperator.java:352)
+	at org.apache.flink.streaming.api.functions.source.ContinuousFileReaderOperator.lambda$new$0(ContinuousFileReaderOperator.java:240)
+	at org.apache.flink.streaming.runtime.tasks.StreamTaskActionExecutor$1.runThrowing(StreamTaskActionExecutor.java:50)
+	at org.apache.flink.streaming.runtime.tasks.mailbox.Mail.run(Mail.java:90)
+	at org.apache.flink.streaming.runtime.tasks.mailbox.MailboxProcessor.processMailsNonBlocking(MailboxProcessor.java:353)
+	at org.apache.flink.streaming.runtime.tasks.mailbox.MailboxProcessor.processMail(MailboxProcessor.java:317)
+	at org.apache.flink.streaming.runtime.tasks.mailbox.MailboxProcessor.runMailboxLoop(MailboxProcessor.java:201)
+	at org.apache.flink.streaming.runtime.tasks.StreamTask.runMailboxLoop(StreamTask.java:809)
+	at org.apache.flink.streaming.runtime.tasks.StreamTask.invoke(StreamTask.java:761)
+	at org.apache.flink.runtime.taskmanager.Task.runWithSystemExitMonitoring(Task.java:958)
+	at org.apache.flink.runtime.taskmanager.Task.restoreAndInvoke(Task.java:937)
+	at org.apache.flink.runtime.taskmanager.Task.doRun(Task.java:766)
+	at org.apache.flink.runtime.taskmanager.Task.run(Task.java:575)
+	at java.lang.Thread.run(Thread.java:750)
+
+2022-08-18 11:33:43  [ flink-akka.actor.default-dispatcher-8:1661 ] - [ WARN ]  No hostname could be resolved for the IP address 127.0.0.1, using IP address as host name. Local input split assignment (such as for HDFS files) may be impacted.
+2022-08-18 11:33:58  [ flink-akka.actor.default-dispatcher-5:1 ] - [ INFO ]  Slf4jLogger started
+2022-08-18 11:33:58  [ flink-metrics-7:99 ] - [ INFO ]  Slf4jLogger started
+2022-08-18 11:33:58  [ main:451 ] - [ WARN ]  Log file environment variable 'log.file' is not set.
+2022-08-18 11:33:58  [ main:452 ] - [ WARN ]  JobManager log files are unavailable in the web dashboard. Log file location not found in environment variable 'log.file' or configuration key 'web.log.path'.
+2022-08-18 11:33:59  [ Split Reader: Custom File Source -> Sink: Print to Std. Out (1/1)#0:1638 ] - [ WARN ]  not processing any records while closed
+2022-08-18 11:33:59  [ Split Reader: Custom File Source -> Map -> Sink: Print to Std. Out (1/1)#0:1638 ] - [ WARN ]  not processing any records while closed
+2022-08-18 11:35:25  [ flink-akka.actor.default-dispatcher-4:1 ] - [ INFO ]  Slf4jLogger started
+2022-08-18 11:35:25  [ flink-metrics-9:100 ] - [ INFO ]  Slf4jLogger started
+2022-08-18 11:35:25  [ main:443 ] - [ WARN ]  Log file environment variable 'log.file' is not set.
+2022-08-18 11:35:25  [ main:444 ] - [ WARN ]  JobManager log files are unavailable in the web dashboard. Log file location not found in environment variable 'log.file' or configuration key 'web.log.path'.
+2022-08-18 11:35:26  [ Split Reader: Custom File Source -> Map -> Sink: Print to Std. Out (1/1)#0:1684 ] - [ WARN ]  not processing any records while closed
+2022-08-18 11:35:26  [ Split Reader: Custom File Source -> Sink: Print to Std. Out (1/1)#0:1684 ] - [ WARN ]  not processing any records while closed

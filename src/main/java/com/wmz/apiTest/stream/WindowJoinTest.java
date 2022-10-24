@@ -33,7 +33,7 @@ public class WindowJoinTest {
 
         SingleOutputStreamOperator<Tuple2<String, Integer>> stream2 = env.fromElements(
                 Tuple2.of("a", 3000),
-                Tuple2.of("b", 4000),
+                Tuple2.of("b", 9999000),
                 Tuple2.of("a", 4500),
                 Tuple2.of("b", 5500)
         ).assignTimestampsAndWatermarks(WatermarkStrategy.<Tuple2<String, Integer>>forBoundedOutOfOrderness(Duration.ZERO)
@@ -47,13 +47,15 @@ public class WindowJoinTest {
         stream1.join(stream2)
                         .where(data -> data.f0)
                                 .equalTo(data -> data.f0)
-                                        .window(TumblingEventTimeWindows.of(Time.seconds(5)))
+                                        .window(TumblingEventTimeWindows.of(Time.seconds(1000)))
                                                 .apply(new JoinFunction<Tuple2<String, Long>, Tuple2<String, Integer>, String>() {
                                                     @Override
                                                     public String join(Tuple2<String, Long> first, Tuple2<String, Integer> second) throws Exception {
                                                         return first + "->" + second;
                                                     }
                                                 }).print();
+
+
 
 
         env.execute();

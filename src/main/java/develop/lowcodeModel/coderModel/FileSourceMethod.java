@@ -1,5 +1,7 @@
 package develop.lowcodeModel.coderModel;
 
+import org.apache.flink.types.Row;
+
 public class FileSourceMethod implements SourceMethod{
 
     String filePath;
@@ -18,6 +20,7 @@ public class FileSourceMethod implements SourceMethod{
 
     @Override
     public String buildSourceCode(){
+
         return "DataStream<String> ds = env.readTextFile(\"" + filePath +"\");";
     }
 }

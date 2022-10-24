@@ -21,6 +21,8 @@ public class LateDataTest {
                 new Event("Alice", "./prod?id=100", 3000L),
                 new Event("Alice", "./prod?id=2000", 3500L));
 
+
+
         SingleOutputStreamOperator<Event> ds = source.assignTimestampsAndWatermarks(WatermarkStrategy.<Event>forBoundedOutOfOrderness(Duration.ofSeconds(2))
                 .withTimestampAssigner(new SerializableTimestampAssigner<Event>() {
                     @Override

@@ -28,6 +28,7 @@ public class SourceTest3_Kafka {
 //        DataStreamSource<String> ds = env.addSource(new FlinkKafkaConsumer011<String>("DevelopTest", new SimpleStringSchema(), properties));
 //        env.addSource(new FlinkKafkaConsumer<String>("DevelopTest", new SimpleStringSchema(), properties));
         DataStreamSource<String> ds = env.fromSource(source, WatermarkStrategy.noWatermarks(), "DevelopTest");
+
 //        ds.keyBy()
 
 
